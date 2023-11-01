@@ -1,0 +1,16 @@
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: artemis
+    password: artemis
+    send-mail-queue: send-mail-queue-local
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
